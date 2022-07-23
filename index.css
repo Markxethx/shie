@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    background: #e5e5e5;
+    color:#333333;
+}
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 0;
+    background: #fffcf2;
+    box-shadow: 0 0 20px #333333 ;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.section-1 .logo{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #370400, #971c01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-1 .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .navigation .nav {
+    display: flex;
+}
+.section-1 .navigation .nav li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.section-1 .navigation .nav li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    background: linear-gradient(to right, #370400, #971c01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
+}
+.section-1 .navigation .nav li a:hover, .section-1 .navigation .nav a.active{
+    background: linear-gradient(to right, #fff971, #971c01 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav li a.active::after, .nav li a:hover::after{
+    content: ""; 
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: #971c01;
+    bottom: -4px;
+    left: 20px;
+}
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+}
+.section-2 .right img{
+    height: 650px;
+    width: auto;
+    position: relative;
+    margin-top: -40px;
+    margin-right: 70px;
+    padding-bottom: 0;
+}
+.section-2 .left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column ;
+    margin-left: 90px;
+}
+.section-2 .left h2{
+    font-family: Brush Script MT;
+    font-size: 40px;
+    margin-top: -25px;
+}
+.section-2 .left h4{
+    margin-top: -25px;
+}
+.section-2 .left p{
+    margin-top: -10px;
+} 
+.section-2 .left h1, .section-2 .left h3, .section-2 .left h4, .section-2 .left p{
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-2 .left h1{
+    font-weight: 800;
+    font-size: 40px;
+    background: linear-gradient(to right, #971c01, #c2b90b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 h4 p {
+    position: relative;
+    top: -30px;
+}
+.section-2 .left h1 .word{
+    font-size: 20px;
+    background: #971c01;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-2 .left button{
+    background-image: url(images/button.png);
+    color: #101010;
+    background-color: transparent;
+    padding: 20px 10px 10px 20px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    transition: .3s ease-in-out;
+}
+.section-2 .left button:hover{
+    background-image: url(images/button1.png);
+    padding: 20px 10px 10px 20px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.section{
+    padding: 40px 80px;
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#feature .fe-box img{
+    width: 80px;
+    height: 80px;
+    padding-bottom: 10px;
+}
+#feature .fe-box {
+    border-radius: 4px;
+    padding:25px 15px;
+    width: 180px;
+    border: 1px solid rgb(0,0,0,0.5);
+    text-align: center;
+    margin: 15px 0;
+    box-shadow: 10px 10px 20px rgb(0, 0 , 0, 0.3);
+}
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0 , 0, 0.5);
+}
+#feature .fe-box h6{
+    background: #230197;
+    color:#fff971;
+    line-height: 1;
+    padding: 9px 6px 8px 6px;
+    margin: 0 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #019704;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #01978B;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #97018D;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #97011D;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #859701;
+}
