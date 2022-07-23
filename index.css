@@ -120,7 +120,7 @@ h2 h4 p {
     -webkit-text-fill-color: transparent;
 }
 .section-2 .left button{
-    background-image: url(images/button.png);
+    background-image: url(button.png);
     color: #101010;
     background-color: transparent;
     padding: 20px 10px 10px 20px;
@@ -132,7 +132,7 @@ h2 h4 p {
     transition: .3s ease-in-out;
 }
 .section-2 .left button:hover{
-    background-image: url(images/button1.png);
+    background-image: url(button1.png);
     padding: 20px 10px 10px 20px;
     border: 0;
     font-size: 20px;
